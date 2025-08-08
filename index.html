@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="https://aofuyu.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -62,7 +62,7 @@
         <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://aofuyu.github.io"></form>
       </div>
     </div>
   </div>
@@ -441,7 +441,7 @@
 </ul>
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2><p><img src="/.com//dataflow.svg" alt="Alt text"></p>
+<h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2><p><img src="/2025/08/09/logguide-cn/dataflow.svg" alt="Alt text"></p>
 <details>
 <summary></summary>
 data_flow
@@ -469,22 +469,22 @@ data_flow
 
 <h3 id="在战斗结束后查看日志"><a href="#在战斗结束后查看日志" class="headerlink" title="在战斗结束后查看日志"></a>在战斗结束后查看日志</h3><p>如果战斗的时候打开了ACT，它会自动生成日志文件(logs)。<br>这些文件会被修剪，形成从战斗开始直到战斗结束的日志。</p>
 <p>如果要查看这些日志的解析版本，点击上面的<strong>Main</strong>标签，展开想看的副本区域，<br>右键点击具体战斗，然后选择<strong>View Logs</strong>。</p>
-<p><img src="/.com//logguide_viewlogs.png" alt="view logs screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_viewlogs.png" alt="view logs screenshot"></p>
 <p><strong>All</strong>条目包含该区域内的所有战斗记录，但无法直接查看，你需要查看单独的战斗记录。</p>
 <p>弹出的窗口显示已解析的日志行，可以用来创建触发器；这是寻找对应文本以编写触发器的一种方式。</p>
 <h3 id="导入旧的战斗记录"><a href="#导入旧的战斗记录" class="headerlink" title="导入旧的战斗记录"></a>导入旧的战斗记录</h3><p>要在中途关闭ACT的情况下查看之前的战斗记录，或者通过别人发给你的日志编写触发器，点击<strong>Import&#x2F;Export</strong>标签，然后点击<strong>Import a Log File</strong>，点击<strong>Select File…</strong> 并选择 <strong>Network_plugin_date.log</strong>日志文件。</p>
 <p>（其中<code>plugin</code>和<code>date</code>表示了解析插件的版本和日期），最后点击<strong>YOU</strong>。</p>
-<p><img src="/.com//logguide_import.png" alt="import screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_import.png" alt="import screenshot"></p>
 <p>这将会创建<a href="#%E5%9C%A8%E6%88%98%E6%96%97%E7%BB%93%E6%9D%9F%E5%90%8E%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97">可查看的日志</a>。</p>
 <h3 id="导入ffxivmon"><a href="#导入ffxivmon" class="headerlink" title="导入ffxivmon"></a>导入ffxivmon</h3><p>如果你想深入研究网络数据，ffxivmon 是一个非常实用的工具。</p>
 <p>要创建一个适用于 ffxivmon 的日志文件，<br>首先，在 ACT 中启用 <strong>(DEBUG) Dump all Network Data to logfile</strong>选项。</p>
-<p><img src="/.com//logguide_dumpnetworkdata.png" alt="dump network data screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_dumpnetworkdata.png" alt="dump network data screenshot"></p>
 <p>然后，在游戏中进行一次战斗，并确保ACT正在运行。<br>战斗结束后，将该网络日志文件导入ffxivmon。</p>
-<p><img src="/.com//logguide_ffxivmon_import.png" alt="ffxivmon import screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_ffxivmon_import.png" alt="ffxivmon import screenshot"></p>
 <p>这样就可以直接浏览、分析网络数据。</p>
-<p><img src="/.com//logguide_ffxivmon.png" alt="ffxivmon screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_ffxivmon.png" alt="ffxivmon screenshot"></p>
 <h2 id="术语索引"><a href="#术语索引" class="headerlink" title="术语索引"></a>术语索引</h2><h3 id="网络数据（Network-Data）"><a href="#网络数据（Network-Data）" class="headerlink" title="网络数据（Network Data）"></a>网络数据（Network Data）</h3><p>这是FF14服务器发送到客户端的原始数据包。<br>这些数据既会被游戏本身处理，也会被解析插件用于最终生成网络日志行。</p>
-<p><img src="/.com//logguide_networkdata.png" alt="network data screenshot"></p>
+<p><img src="/2025/08/09/logguide-cn/logguide_networkdata.png" alt="network data screenshot"></p>
 <p>一般来说，编写触发器的人无需关心原始数据包，因此本文档不会过多关注此类数据。</p>
 <h3 id="网络日志行（Network-Log-Lines）"><a href="#网络日志行（Network-Log-Lines）" class="headerlink" title="网络日志行（Network Log Lines）"></a>网络日志行（Network Log Lines）</h3><p>这是解析插件在本地文件<strong>Network_22009_20210801.log</strong>中保存的日志行。这些日志行依旧经过了插件的处理和过滤，大部分并非原始网络数据。</p>
 <p>以下是网络日志行的例子：</p>
@@ -2123,63 +2123,12 @@ data_flow
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/09/logguide-cn/" data-id="cme36qdfi000128ut1k1z7uec" data-title="日志行与触发器（Log Lines and Triggers）" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://aofuyu.github.io/2025/08/09/logguide-cn/" data-id="cme385z3o0000hkut14koavyo" data-title="日志行与触发器（Log Lines and Triggers）" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Final-Fantasy-XIV-OverlayPlugin-Cactbot/" rel="tag">Final Fantasy XIV, OverlayPlugin, Cactbot</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/08/08/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-08-08T15:28:07.122Z" itemprop="datePublished">2025-08-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/08/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/08/hello-world/" data-id="cme36qdfd000028utbnos3pnd" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
     </footer>
   </div>
   
@@ -2234,10 +2183,6 @@ data_flow
         
           <li>
             <a href="/2025/08/09/logguide-cn/">日志行与触发器（Log Lines and Triggers）</a>
-          </li>
-        
-          <li>
-            <a href="/2025/08/08/hello-world/">Hello World</a>
           </li>
         
       </ul>
